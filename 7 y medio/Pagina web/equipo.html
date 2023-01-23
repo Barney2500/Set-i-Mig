@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Equipo Siete y Medio</title>
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────────────Barra de navegación───────────────────────────────────────────────── -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" width="75px" height="75px"></a>
+        </div>
+        
+
+        <div class="irA">
+            <ul id="MenuItems">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="documentacion.html">Documentación</a></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <ul id="MenuUser">
+                <li><a href="#">¡Regístrate!</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+<!-- ─────────────────────────────────────────────────Texto principal───────────────────────────────────────────────── -->
+                             
+    <div class="principioG">
+        <div class="textoPrincip">
+            <h1 class="ttx">Proyecto Siete y Medio</h1>
+        </div>
+        <div class="typewriter">
+            <h2>Realizado por Renato, Marc y Javier.</h2>
+        </div>          
+    </div>
+
+
+<!-- ─────────────────────────────────────────────────Cuadros desplegados───────────────────────────────────────────────── -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <!-- ───────────────────Cuadro Renato─────────────────── -->
+                <a class="boton"href="#renato">
+                    <div class="col-3" id="click" onclick="aparecer()">
+                        <h1 class="nombre">📕</h1>
+                        <h3>Renato</h3>
+                        <p>Enfocado en gran parte a Python, domina casi todos los aspectos del curso, ayudando en HTML, SQL y demás. Su ayuda ha sido fundamental para el proyecto.</p>
+                    </div>
+                </a>
+                <!-- ────────────────────Cuadro Marc──────────────────── -->
+                <a class="boton"href="#marc">
+                    <div class="col-3"onclick="aparecer2()">
+                        <h1 class="nombre">📗</h1>
+                        <i class="fa fa-quote-left"></i>
+                        <h3>Marc</h3>
+                        <p>Responsable de la base de datos, enfocado prioritariamente a esta, aunque dando gran parte de su tiempo en la realización de todas las tareas adicionales.</p>
+                    </div>
+                </a>
+                <!-- ───────────────────Cuadro Javier─────────────────── -->
+                <a class="boton"href="#javier">
+                    <div class="col-3"onclick="aparecer3()">
+                        <h1 class="nombre">📘</h1>
+                        <i class="fa fa-quote-left"></i>
+                        <h3>Javier</h3>
+                        <p>Decidido a hacer la página web, este se puso desde el primer día a darle forma a la web, sin dejar atrás Python ni SQL aportando información de utilidad.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ─────────────────────────────────────────────────Cuadros desplegados───────────────────────────────────────────────── -->
+
+    <!-- ───────────────────Cuadro desplegado Renato─────────────────── -->
+    <div class="renato" id="renato"> 
+        <div class="mayus">
+            <p class="nombrePrincip">Renato</p>
+        </div>
+        <div class="contexto">
+            <h1 class="modulo">M01</h1>
+            <p>Aportaciones a la hora de crear la máquina virtual y enlazarla con el programa de python para que su funcionamiento sea óptimo.</p>
+            <h1 class="modulo">M02</h1>
+            <p>Ayuda para trasladar la base de datos local a la máquina virtual para que esta funcione en buenas condiciones al iniciar el programa en python.</p>
+            <h1 class="modulo">M03</h1>
+            <p>Excepcional realización del programa está realizado por él, siendo un pilar fundamental para el grupo, haciendo la mayor parte de las funciones y de su posterior desarrollo y mejora.</p>
+            <h1 class="modulo">M04</h1>
+            <p>Un pilar a la hora de hacer la página web, ya que sus conocimientos de HTML, CSS y JS han hecho posible varias animaciones a la vista del espectador.</p>
+            <h1 class="modulo">M05</h1>
+            <p>Aporte al diagrama de flujo dando una idea principal de cómo hacerlo para que quede bien estéticamente y funcionalmente.</p>
+        </div>
+    </div>
+
+    <!-- ────────────────────Cuadro desplegado Marc──────────────────── -->
+    <div class="renato" id="marc">
+        <div class="mayus">
+            <p class="nombrePrincip">Marc</p>
+        </div>
+        <div class="contexto">
+            <h1 class="modulo">M01</h1>
+            <p>Creador de la máquina virtual y su posterior enlace con el programa en Python para que estos dos funcionen correctamente enlazados.</p>
+            <h1 class="modulo">M02</h1>
+            <p>Responsable de la realización de la base de datos desde cero y de las querys necesarias que requería el programa.</p>
+            <h1 class="modulo">M03</h1>
+            <p>Gran aporte a la visibilidad del trabajo en Python para que este se vea bien estéticamente y que no se escape ningún detalle.</p>
+            <h1 class="modulo">M04</h1>
+            <p>Pilar en la página web, su visión estética hizo que la página fuera visiblemente estética y profesional para cumplir con la presentación y los requesitos que se pedían</p>
+            <h1 class="modulo">M05</h1>
+            <p>Desarrollador del repositorio en GitHub, además de hacer el driagrama de flujo en gran parte, consiguiendo que este se vea bien y sea profesional.</p>
+        </div>
+    </div>   
+    <!-- ───────────────────Cuadro desplegado Javier─────────────────── -->
+    <div class="renato" id="javier">
+        <div class="mayus">
+            <p class="nombrePrincip">Javier</p>
+        </div>
+        <div class="contexto">
+            <h1 class="modulo">M01</h1>
+            <p>Gran pilar para la máquina virtual, dando unas nociones y guías sobre cómo había que hacer la máquina.</p>
+            <h1 class="modulo">M02</h1>
+            <p>Ayudante para la base de datos guiando como crearla para que esta tenga todos los parámetros necesarios sin ningún tipo de error a la hora de crearse.</p>
+            <h1 class="modulo">M03</h1>
+            <p>Aporte de una parte de las funciones en python y su posterior mejora para que estas sean 100% funcionales sin ningún error y con estética profesional.</p>
+            <h1 class="modulo">M04</h1>
+            <p>Desarrollador de la página web, dedicando la mayor parte de su tiempo a hacer una página que esté adaptada a las necesidades estéticas de hoy en día.</p>
+            <h1 class="modulo">M05</h1>
+            <p>Ayuda para realizar el diagrama de flujo, dando un gran aporte para el diagrama y su revisión para comprobar que sea correcto.</p>
+        </div>
+    </div>
+        
+</body>
+
+
+<!-- ─────────────────────────────────────────────────JavaScript───────────────────────────────────────────────── -->
+
+<script>
+    var dis = 'none'
+    var disnt = 'flex'
+function aparecer(){
+    var x = document.getElementById('renato');
+    var y = document.getElementById('marc');
+    var z = document.getElementById('javier');
+    var currentx = window.getComputedStyle(x,null).display
+
+    if(currentx === dis){
+        z.style.display = 'none'
+        x.style.display= 'flex'
+        y.style.display = 'none'
+    }
+    else{
+        x.style.display = 'none'
+}
+
+}
+function aparecer2(){
+    var x = document.getElementById('renato');
+    var y = document.getElementById('marc');
+    var z = document.getElementById('javier');
+    var currenty = window.getComputedStyle(y,null).display
+    if (currenty === dis){
+        z.style.display = 'none'
+        x.style.display= 'none'
+        y.style.display = 'flex'
+    }else{
+        y.style.display = 'none'
+    }
+
+}
+function aparecer3(){
+    var x = document.getElementById('renato');
+    var y = document.getElementById('marc');
+    var z = document.getElementById('javier');
+    var currentz = window.getComputedStyle(z,null).display
+    if (currentz === dis){
+        z.style.display = 'flex'
+        x.style.display= 'none'
+        y.style.display = 'none'
+    }else{
+        z.style.display = 'none'
+    }
+}
+
+
+</script>
+</html>
+
+<!-- ─────────────────────────────────────────────────1DAW2022/2023───────────────────────────────────────────────── -->

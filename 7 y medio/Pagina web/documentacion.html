@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentación Siete y medio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- ─────────────────────────────────────────────────Barra de navegación───────────────────────────────────────────────── -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" width="75px" height="75px"></a>
+        </div>
+        
+
+        <div class="irA">
+            <ul id="MenuItems">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="documentacion.html">Documentación</a></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <ul id="MenuUser">
+                <li><a href="#">¡Regístrate!</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="output"></div>
+<!-- ────────────────────────────────────────────────────Documentación───────────────────────────────────────────────── -->
+    <div class="documentacion">
+        <!-- ────────── 1 ────────── -->
+        <div class="izquierda">
+            <div class="textoIzq">
+                <h2>1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, laborum? Doloribus eaque aperiam blanditiis odio voluptatem porro at odit labore itaque reprehenderit nisi dignissimos consequuntur, voluptas, reiciendis, dolores laudantium voluptate!</p>
+            </div>
+            <div class="imgIzq">
+                <img class="imagenIzq" src="./img/prueba.png" alt="">
+            </div>
+        </div>
+
+        <!-- ────────── 2 ────────── -->
+        <div class="derecha">
+            <div class="textoDer">
+                <h2>2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, laborum? Doloribus eaque aperiam blanditiis odio voluptatem porro at odit labore itaque reprehenderit nisi dignissimos consequuntur, voluptas, reiciendis, dolores laudantium voluptate!</p>
+            </div>
+            <div class="imgDer">
+                <img class="imagenDer" src="./img/prueba.png" alt="">
+            </div>
+        </div>
+
+        <!-- ────────── 3 ────────── -->
+        <div class="izquierda">
+            <div class="textoIzq">
+                <h2>3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, laborum? Doloribus eaque aperiam blanditiis odio voluptatem porro at odit labore itaque reprehenderit nisi dignissimos consequuntur, voluptas, reiciendis, dolores laudantium voluptate!</p>
+            </div>
+            <div class="imgIzq">
+                <img class="imagenIzq" src="./img/prueba.png" alt="">
+            </div>
+        </div>
+
+        <!-- ────────── 4 ────────── -->
+        <div class="derecha">
+            <div class="textoDer">
+                <h2>4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, laborum? Doloribus eaque aperiam blanditiis odio voluptatem porro at odit labore itaque reprehenderit nisi dignissimos consequuntur, voluptas, reiciendis, dolores laudantium voluptate!</p>
+            </div>
+            <div class="imgDer">
+                <img class="imagenDer" src="./img/prueba.png" alt="">
+            </div>
+        </div>
+
+        <!-- ────────── 5 ¡Sin añadir! ────────── -->
+    </div>
+    
+</body>
+
+
+<script>
+    
+$(document).ready(function(){
+// ──────────Variables────────── //
+var theLetters = "/#%&^+=-_]<[>";
+var ctnt = "Documentación Python";
+var speed = 15;
+var increment = 8;
+
+var clen = ctnt.length;       
+var si = 0;
+var stri = 0;
+var block = "";
+var fixed = "";
+// ──────────Función────────── //
+(function rustle (i) {          
+setTimeout(function () {
+  if (--i){rustle(i);}
+  nextFrame(i);
+  si = si + 1;        
+}, speed);
+})(clen*increment+1); 
+
+function nextFrame(pos){
+  for (var i=0; i<clen-stri; i++) {
+    var num = Math.floor(theLetters.length * Math.random());
+    var letter = theLetters.charAt(num);
+    block = block + letter;
+  }
+  if (si == (increment-1)){
+    stri++;
+  }
+  if (si == increment){
+  fixed = fixed +  ctnt.charAt(stri - 1);
+  si = 0;
+  }
+  $("#output").html(fixed + block);
+  block = "";
+}
+});
+</script>
+</html>
+
+<!-- ─────────────────────────────────────────────────1DAW2022/2023───────────────────────────────────────────────── -->

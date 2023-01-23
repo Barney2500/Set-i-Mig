@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE memoria SYSTEM "proyecto.dtd">
+<memoria>
+    <baraja tipo="oros">
+        <carta id="id_001">
+            <numero>1</numero>
+        </carta>
+        <carta id="id_002">
+            <numero>2</numero>
+        </carta>
+        <carta id="id_003">
+            <numero>3</numero>
+        </carta>
+        <carta id="id_004">
+            <numero>4</numero>
+        </carta>
+        <carta id="id_005">
+            <numero>5</numero>
+        </carta>
+        <carta id="id_006">
+            <numero>6</numero>
+        </carta>
+        <carta id="id_007">
+            <numero>7</numero>
+        </carta>
+        <carta id="id_008">
+            <numero>8</numero>
+        </carta>
+        <carta id="id_009">
+            <numero>9</numero>
+        </carta>
+        <carta id="id_010">
+            <numero>10</numero>
+        </carta>
+        <carta id="id_011">
+            <numero>11</numero>
+        </carta>
+        <carta id="id_012">
+            <numero>12</numero>
+        </carta>
+    </baraja>
+
+    <baraja tipo="copas">
+        <carta id="id_101">
+            <numero>1</numero>
+        </carta>
+        <carta id="id_102">
+            <numero>2</numero>
+        </carta>
+        <carta id="id_103">
+            <numero>3</numero>
+        </carta>
+        <carta id="id_104">
+            <numero>4</numero>
+        </carta>
+        <carta id="id_105">
+            <numero>5</numero>
+        </carta>
+        <carta id="id_106">
+            <numero>6</numero>
+        </carta>
+        <carta id="id_107">
+            <numero>7</numero>
+        </carta>
+        <carta id="id_108">
+            <numero>8</numero>
+        </carta>
+        <carta id="id_109">
+            <numero>9</numero>
+        </carta>
+        <carta id="id_110">
+            <numero>10</numero>
+        </carta>
+        <carta id="id_111">
+            <numero>11</numero>
+        </carta>
+        <carta id="id_112">
+            <numero>12</numero>
+        </carta>
+    </baraja>
+
+    <baraja tipo="espadas">
+        <carta id="id_201">
+            <numero>1</numero>
+        </carta>
+        <carta id="id_202">
+            <numero>2</numero>
+        </carta>
+        <carta id="id_203">
+            <numero>3</numero>
+        </carta>
+        <carta id="id_204">
+            <numero>4</numero>
+        </carta>
+        <carta id="id_205">
+            <numero>5</numero>
+        </carta>
+        <carta id="id_206">
+            <numero>6</numero>
+        </carta>
+        <carta id="id_207">
+            <numero>7</numero>
+        </carta>
+        <carta id="id_208">
+            <numero>8</numero>
+        </carta>
+        <carta id="id_209">
+            <numero>9</numero>
+        </carta>
+        <carta id="id_210">
+            <numero>10</numero>
+        </carta>
+        <carta id="id_211">
+            <numero>11</numero>
+        </carta>
+        <carta id="id_212">
+            <numero>12</numero>
+        </carta>
+    </baraja>
+
+    <baraja tipo="bastos">
+        <carta id="id_301">
+            <numero>1</numero>
+        </carta>
+        <carta id="id_302">
+            <numero>2</numero>
+        </carta>
+        <carta id="id_303">
+            <numero>3</numero>
+        </carta>
+        <carta id="id_304">
+            <numero>4</numero>
+        </carta>
+        <carta id="id_305">
+            <numero>5</numero>
+        </carta>
+        <carta id="id_306">
+            <numero>6</numero>
+        </carta>
+        <carta id="id_307">
+            <numero>7</numero>
+        </carta>
+        <carta id="id_308">
+            <numero>8</numero>
+        </carta>
+        <carta id="id_309">
+            <numero>9</numero>
+        </carta>
+        <carta id="id_310">
+            <numero>10</numero>
+        </carta>
+        <carta id="id_311">
+            <numero>11</numero>
+        </carta>
+        <carta id="id_312">
+            <numero>12</numero>
+        </carta>
+    </baraja>
+</memoria>

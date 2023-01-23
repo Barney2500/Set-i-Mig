@@ -1,0 +1,734 @@
+/* ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   ├──────────────────────────────────────────────CSS GENERAL───────────────────────────────────────────────┤
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+
+/* ─────────────────────────────────────────────────Fuentes───────────────────────────────────────────────── */
+
+    @font-face {
+        font-family: "casino";
+        src: url(./font/CasinoShadow-Italic.ttf);
+    }
+
+
+/* ─────────────────────────────────────────────────General───────────────────────────────────────────────── */
+
+    body {
+        background-image: url(./img/background.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+/* ────────────────────────────────────────────Barra de navegación─────────────────────────────────────────── */
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #ffd000;
+        box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+
+        /* Dejar la barra de navegación fija */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    #MenuItems {
+        margin-right: 50px;
+
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .irA ul , .user{
+        display: inline-block;
+        list-style-type: none;
+        
+    }
+
+    .irA ul li , .user ul li{    
+        display: inline-block;
+        margin-right: 15px;
+        
+    }
+
+    .irA ul li a{
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1.5px 1.5px #8f8e8e;
+    }
+
+
+
+    .user {
+        margin-right: 30px;
+        flex: 2;
+        text-align: right;
+    }
+
+    .user ul li a{
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1.5px 1.5px #8f8e8e;
+    }
+
+    
+/* ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   ├────────────────────────────────────────────PÁGINA PRINCIPAL────────────────────────────────────────────┤
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+
+/* ─────────────────────────────────────────────────Cabecera───────────────────────────────────────────────── */
+
+    .cabecera {
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: transparent;
+    }
+
+    .cabecera .titulo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .cabecera .titulo img {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:25%;
+    }
+
+    .cabecera h1 {
+        font-family: "casino";
+        font-size:75px;
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+/* ─────────────────────────────────────────────────Cuerpo principal───────────────────────────────────────────────── */
+
+    .cuerpo {
+        margin-top: 3%;
+        margin-left: 20%;
+        margin-right: 20%;
+        background: rgba(74, 74, 74, .7);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        color: #fff;
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        border-radius: 15px;
+        border: 2px solid rgba(236,173,0,1);
+    }
+
+
+    .intro {
+        margin:auto;
+    }
+
+    .cuerpo .intro p {
+        margin: 10px 75px 0 75px;
+        font-size: 45px;
+        font-weight: bold;
+        display: flex;
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: translate(0%, 0%);
+        
+
+    }
+
+    .cuerpo .descripcion p {
+        position: relative;
+        font-size: 18px;
+        text-shadow: 0 0 0.2em #000, 0 0 0.2em #000;
+    }
+
+    .descripcion {
+        margin: 25px;
+        text-align: center;
+        
+    }
+
+    .fichas{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 30% ;
+        display: flex;
+        margin: auto;
+    }
+
+/* ─────────────────────────────────────────────────Reglas───────────────────────────────────────────────── */
+
+
+    .txtTutorial {
+        margin: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tarjetasReglas {
+        margin-top: 30px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1100px;
+    }
+
+    .container .card {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin: 15px;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.75);
+        border: 2px solid rgba(236,173,0,1);
+
+    }
+
+    .container .card .imgBx, 
+    .container .card .contentBx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .card .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container .card .contentBx::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:rgba(72, 72, 72, 0.8);
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in;
+        transform-origin: right;
+        transition-delay: 0.3s;
+
+    }
+
+    .container .card:hover .contentBx::before {
+        transform: scaleX(1);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: left;
+        transition-delay: 0s;
+    }
+
+    .container .card .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container .card .contentBx .content {
+        font-size: 1.1em;
+        position: relative;
+        padding: 30px;
+        z-index: 1;
+        transition: 0.5s;
+        transform: translateX(-300px);
+        transition-delay: 0s;
+    }
+
+    .container .card:hover .contentBx .content {
+        transform: translateX(0px);
+        transition-delay: 0.3s;
+    }
+
+    .container .card .contentBx .content h3 {
+        color: rgb(255, 255, 0);
+        text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .container .card .contentBx .content p {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+        font-size: 1em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+
+    .tituloR {
+        font-size: 1.8em;
+        text-align: center;
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .reglasRRR {
+        margin: 50px 0 15px 0;
+    }
+
+    hr {
+        width: 250px;
+    }
+
+/* ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   ├────────────────────────────────────────────────TUTORIAL────────────────────────────────────────────────┤
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+
+/* ─────────────────────────────────────────────────Título───────────────────────────────────────────────── */
+
+    .tituloTutorial {
+        margin: 0 10px 0 10px;
+        text-align: center;
+        border: 1px solid rgba(236,173,0,1);
+        background: rgba(74, 74, 74, .3);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /* ─────────────Animación título cambiando de color───────────── */
+    .txtTituloTutorial {
+        display: inline-block;
+        position: relative;
+        color: #ffffff;
+        background: linear-gradient(to right, rgba(236,173,0,1) 0, rgba(240,234,76,1) 30%, rgba(236,173,0,1) 60%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 2.5s infinite linear;
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        font-weight: 600;
+        font-size: 3em;
+        text-decoration: none;
+        white-space: nowrap;
+    }  
+    @keyframes shine {
+        0% {
+        background-position: 0 }
+        50% {
+        background-position: 180px }
+        100% {
+        background-position: 180px }}
+
+/* ────────────────────────────────────────────────Contenido───────────────────────────────────────────────── */
+
+    .imgBox {
+        margin: auto;
+        width: 500px;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+    }  
+
+    .swiper-container {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        margin: 30px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(74, 74, 74, .3);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border: 1px solid #727272;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #fff;    
+    }
+
+    .textTut {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .imgTut {
+        display: flex;
+        margin: 30px 0 0 0;
+        width: 175px;
+        height: 250px;
+    }
+
+
+/* ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   ├─────────────────────────────────────────────────EQUIPO─────────────────────────────────────────────────┤
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+
+   
+/* ────────────────────────────────────────────Texto en movimiento─────────────────────────────────────────── */
+
+    .principioG {
+        margin: auto;
+        margin-top:100px;
+        background: rgba(74, 74, 74, .3);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        color: #fff;
+        width: 75%;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+
+    .textoPrincip {
+        width: 100%;
+        font-size: 2em;
+        margin : 50px 0 0 0;
+    }
+
+    .ttx {
+        margin:50px 0 0 20px;
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .typewriter {
+        margin-left: 50px;
+        display: inline-block;
+    }
+
+    /* ─────────────Animación escribiendo───────────── */
+    .typewriter h2 {
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        align-items: center;
+        color: #fff;
+        overflow: hidden;
+        border-right: .1em solid rgb(255, 255, 255);
+        white-space: nowrap;
+        animation: 
+            escribiendo 3.5s steps(50, end),
+            linea .3s ease infinite;
+    }
+
+    @keyframes escribiendo {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes linea {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(255, 255, 255) }
+    }
+
+
+/* ─────────────────────────────────────────────────Cuadros────────────────────────────────────────────────── */
+
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .col-3 {
+        flex-basis: 25%;
+        width: 250px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        background-color: rgba(236,173,0, 0.8);
+    }
+
+    .col-3 img {
+        width: 100%;
+    }
+
+    .small-container {
+        margin: 70px 0;
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .testimonial {
+        padding-top: 100px;
+    }
+        
+    .testimonial .col-3 {
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+        
+    .testimonial .col-3:hover {
+        transform: translateY(-10px);
+    }
+        
+    .fa.fa-quote-left {
+        font-size: 35px;
+        color: #ffbb6e;
+    }
+        
+    .col-3 p {
+        font-size: 12px;
+        margin: 12px 0;
+        color: rgb(255, 255, 255);
+    }
+        
+    .testimonial .col-3 h3 {
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+
+    .boton {
+        text-decoration: none;
+    }
+
+
+/* ───────────────────────────────────────────Cuadros desplegables─────────────────────────────────────────── */
+
+    .total {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #marc, #javier {
+        display: none;
+    }
+
+    .renato {
+        display: none;
+        width: 60%;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.75);
+        border: 2px solid rgba(236,173,0,1);
+        align-items: center;    
+        margin: auto;
+        margin-bottom: 30px;
+
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+    }
+
+    .contexto {
+        margin: 25px;
+    }
+
+    .mayus {
+        font-size: 3em;
+    }
+
+    .nombrePrincip {
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .modulo {
+        text-shadow: 0 0 0.2em rgb(255, 255, 255), 0 0 0.2em #000;
+    }
+
+
+/* ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   ├──────────────────────────────────────────────DOCUMENTACIÓN─────────────────────────────────────────────┤
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+
+   
+/* ────────────────────────────────────────Título documentación─────────────────────────────────────── */
+
+    #output{
+        display: flex;
+        font-size: 3em;
+        font-weight: bold;
+        margin: 75px 0 50px 150px;
+        font-size: 5em;
+        background: -webkit-linear-gradient(rgba(236,173,0,1), rgba(240,234,76,1), rgba(236,173,0,1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+/* ────────────────────────────────────────────Documentación─────────────────────────────────────────── */
+
+/* ─────────────General───────────── */ 
+    .documentacion {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 200px;
+        border: 1px solid rgba(236,173,0,1);
+        background: rgba(74, 74, 74, .3);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    /* ────────────Izquierda──────────── */ 
+    .izquierda {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .textoIzq {
+        color: #fff;
+        margin-right: 15px
+    }
+
+    .imgIzq {
+        justify-content: end;
+    }
+
+    .imagenIzq {
+        width: 500px;
+        height: 270px;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+    }
+
+    .imagenIzq:hover {
+        transform: scale(2.2) translate(-45%, 0);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: left;
+        transition-delay: 0s;
+    }
+
+    /* ─────────────Derecha───────────── */
+    .derecha {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 20px;
+    }
+
+    .textoDer {
+        color: #fff;
+        margin-left: 15px;
+    }
+
+    .imgDer {
+        justify-content: end;
+    }
+
+    .imagenDer {
+        width: 500px;
+        height: 270px;
+        display: flex;
+        align-items: flex-end;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+    }
+
+    .imagenDer:hover {
+        transform: scale(2.2) translate(-11%, 0);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: left;
+        transition-delay: 0s;
+    }
+
+
+
+/* ───────────────────────────────────────────Vista desde el móvil─────────────────────────────────────────── */
+
+    @media only screen and (max-width: 768px) {
+        .cuerpo{
+            display: flex;
+            flex-direction: column;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .fichas{
+            width: 50% ;
+            display: flex;
+            margin: auto;
+        }
+        .cabecera .titulo {
+            display: flex;
+            flex-direction: column;
+        }
+        .cabecera .titulo img {
+            width: 100%;
+        }
+
+        .tarjetasReglas {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        .ttx {
+            text-align: center;
+        }
+        .documentacion {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #output {
+            margin: auto;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .izquierda {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .derecha {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imagenDer, .imagenIzq {
+            width: 100%;
+            height: 10%;
+        }
+
+        .imagenDer:hover, .imagenIzq:hover {
+            transform: scale(1.5) translate(-17%, 0);
+        }
+    }
+
+
+/* ───────────────────────────────────────────────1DAW2022/2023────────────────────────────────────────────── */

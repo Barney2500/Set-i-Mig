@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Tutorial Siete y medio</title>
+</head>
+<body>
+    
+<!-- ─────────────────────────────────────────────────Barra de navegación───────────────────────────────────────────────── -->
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="./img/logo.png" width="75px" height="75px"></a>
+    </div>
+    
+    <div class="irA">
+        <ul id="MenuItems">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="tutorial.html">Documentación</a></li>
+        </ul>
+    </div>
+
+    <div class="user">
+        <ul id="MenuUser">
+            <li><a href="#">¡Regístrate!</a></li>
+            <li><a href="#">Iniciar sesión</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────Título Tutorial───────────────────────────────────────────────── -->
+
+<div class="tituloTutorial">
+    <p class="txtTituloTutorial">¿Cómo se juega?</p>
+</div>
+
+<!-- ────────────────────────────────────────────────────Contenido──────────────────────────────────────────────────── -->
+<div class="imgBox">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- ─────────────────── 1 ─────────────────── -->
+            <div class="swiper-slide">
+                <h1 class="numTut">Comienzo de la partida</h1>
+                <p class="textTut">Por sorteo se decide quién es el jugador que comenzará teniendo la banca, que será quien reparte. La banca reparte una carta a cada uno de los jugadores, incluyéndose a sí misma.</p>
+                <img src="./img/as1.png" class="imgTut">
+            </div>
+            <!-- ─────────────────── 2 ─────────────────── -->
+            <div class="swiper-slide">
+                <h1 class="numTut">Objetivo</h1>
+                <p class="textTut">Conseguir siete y media, es decir, que el valor de todas las cartas del jugador sume siete puntos y medio o bien se acerque el máximo a este valor sin pasarse. La banca juega contra cada uno de los puntos individualmente y su jugada ha de superar o igualar la de cada uno de ellos. En caso de empate, la banca gana.</p>
+                <img src="./img/as2.png" class="imgTut">
+            </div>
+            <!-- ─────────────────── 3 ─────────────────── -->
+            <div class="swiper-slide">
+                <h1 class="numTut">Número de jugadores</h1>
+                <p class="textTut">Indistinto a partir de dos. La única limitación proviene del número de cartas del mazo (40), por lo que se recomienda un máximo de ocho jugadores.</p>
+                <img src="./img/as3.png" class="imgTut">
+            </div>
+            <!-- ─────────────────── 4 ─────────────────── -->
+            <div class="swiper-slide">
+                <h1 class="numTut">Tipo de Baraja</h1>
+                <p class="textTut">En el juego de las siete y media se utiliza la baraja española de 40 cartas. Como el palo en este juego no tiene importancia, puede también utilizarse cualquier baraja de 40 cartas que tenga 12 figuras y 28 cartas distribuidas en cuatro grupos cuyos valores sean consecutivos del 1 al 7.</p>
+                <img src="./img/as4.png" class="imgTut">    
+            </div>
+            <!-- ─────────────────── 5 ─────────────────── -->
+            <div class="swiper-slide">
+                <h1 class="numTut">Valor de las cartas</h1>
+                <p class="textTut">Cada una de las figuras valen medio punto. El resto de las cartas tiene el valor representado por su índice, es decir el valor indicado en la carta: el uno o as vale 1 punto; el dos, 2 puntos; el tres, 3 puntos; el cuatro, 4 puntos; el cinco, 5; el seis, 6 puntos, y el siete, 7.</p>
+                <img src="./img/as5.png" class="imgTut">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ────────────────────────────────────────────────────JavaScript──────────────────────────────────────────────────── -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop:true
+    });
+</script>
+
+</body>
+</html>

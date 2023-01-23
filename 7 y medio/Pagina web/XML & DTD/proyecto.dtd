@@ -1,0 +1,7 @@
+<!ELEMENT memoria (baraja*)>
+<!ELEMENT baraja (carta*)>
+<!ATTLIST baraja tipo CDATA #REQUIRED>
+<!ELEMENT carta (numero)>
+<!ATTLIST carta id ID #REQUIRED>
+<!ATTLIST programes id ID #REQUIRED>
+<!ELEMENT numero (#PCDATA)>
